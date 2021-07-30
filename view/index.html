@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/general.css" type="text/css" rel="stylesheet"/>
+    <title>Lighting Control onPC</title>
+    <script>
+        if (module) {
+            window.module = module;
+        }
+        window.$ = require("./js/jquery-2.1.4.min");
+        require("./js/index");
+    </script>
+</head>
+<body>
+<div class="menu">
+    <div class="hint-top">
+        Mode Select
+    </div>
+    <button class="function-button" id="channel">
+        Channel
+    </button>
+    <button class="function-button" id="function">
+        Function
+    </button>
+    <button class="function-button">
+        CUE
+    </button>
+    <div class="hint-middle">
+        Page Select
+    </div>
+    <div class="function-button-group">
+        <button class="function-button-half" id="pageDown">
+            &lt;
+        </button>
+        <button class="function-button-half" id="pageUp">
+            &gt;
+        </button>
+    </div>
+    <button class="function-button" id="pageSkip">
+        SKIP
+    </button>
+    <div class="hint-middle">
+        Operate
+    </div>
+    <button class="function-button" id="highLt">
+        HighLt
+    </button>
+    <div class="hint-middle">
+        Utilities
+    </div>
+    <button class="function-button">
+        Backup
+    </button>
+    <button class="function-button">
+        Hardware
+    </button>
+    <button class="function-button">
+        Patch
+    </button>
+</div>
+<div class="main">
+    <div class="layout">
+        <div class="layout-inner">
+            <div class="layout-header">
+                Layout View
+                <button class="aux-button" id="setup">
+                    Setup
+                </button>
+                <button class="aux-button" id="switch">
+                    Switch
+                </button>
+                <button class="aux-button" id="clear">
+                    Clear
+                </button>
+            </div>
+            <div class="layout-body">
+                <canvas class="layout-display" height="1920" width="1080">
+
+                </canvas>
+            </div>
+        </div>
+    </div>
+    <div class="faders">
+    </div>
+    <div class="parameter">
+        <div class="parameter-header">
+        </div>
+        <div class="parameter-body">
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
